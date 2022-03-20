@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>每日一句</title>
+</head>
+<style type="text/css">
+.lee{
+    width: 400px;
+    height: 400px;
+    {#position: absolute;#}
+    margin: 0 auto;
+    {#text-align: center;#}
+}
+</style>
+<body>
+<div class="lee">
+    <h1>每日一句</h1>
+    <h5>{{ dateline }}</h5>
+    <h2>{{ note }}</h2>
+    <h2>{{ content }}</h2>
+    <img style="height: 600px;width: 500px" src="{{ picture }}">
+    <audio controls>
+        <source src="{{ tts }}" type="audio/mpeg">
+    </audio>
+</div>
+</body>
+</html>
